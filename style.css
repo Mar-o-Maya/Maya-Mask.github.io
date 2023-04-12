@@ -6,20 +6,33 @@
     vertical-align: baseline;
 }
 
-body {
-    text-align: center;
+.body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: sans-serif;
+    background-color: #000;
+    color: #000;
+}
+.fondo {
+    color: #000;
+    background-color: #000;
+
 }
 
-.head {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 63px;
-    background: #171717;
-    position: fixed;
-    width: 100%;
-    z-index: 100;
+
+.navbar a {
+    display: block;
+    padding: 20px 20px;
+    color: #fff;
+    background-color: rgb(70, 69, 69);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    background: #3f3f3f;
 }
 
 .navbar {
@@ -38,47 +51,94 @@ body {
     font-size: 20px;
 }
 
-.navbar a {
-    display: block;
-    padding: 20px 20px;
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 20px;
+.contentlogo {
+    background-color: #fff;
+}
+.barra {
+    display: flex;
+    align-items: safe;
+    justify-content: space-between;
+    height: 63px;
+    background: #171717;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
 }
 
-.navbar a:hover {
-    background: #3f3f3f;
+.logomaya {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
-.header {
+.subtexto{
+    color: #6e6c6c;
+    padding-top: auto;
+}
+
+.cajainicio {
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-block-end: 20px;
 
 }
 
-.header {
-    height: 45vh !important;
-    background: url(D:\Mayastusk\fondo.png);
-    background-size: cover;
+.cajainicio .caja1 {
+    height: auto;
+    width: 17rem;
+    background: #252525;
+    text-align: center;
+    border-radius: 1rem;
+    margin: 1rem;   
+
 }
 
-.title {
-    margin-bottom: -45px;
-    margin-top: 40px;
-    font-size: 60px;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: rgb(0, 0, 0);
+.cajainicio .caja2 {
+    height: auto;
+    width: 17rem;
+    background: #252525;
+    text-align: center;
+    border-radius: 1rem;
+    margin: 1rem;   
+
 }
 
-p {
-    margin-top: 40px;
-    margin-bottom: 30px;
-    font-size: 18px;
-    color: rgb(151, 147, 147);
-    padding: 0 100px;
+.cajainicio .caja1 i {
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    background: #b05e27;
+    font-size: 2rem;
+    margin: 1rem 0;
+
+}
+
+.cajainicio .caja1 h3 {
+    font-size: 30px;
+    color: #b39f6b;
+
+}
+
+.cajainicio .caja2 h3 {
+    font-size: 30px;
+    color: #cdae98;
+
+}
+
+.cajainicio .caja1 p {
+    padding: 0 15px;
+    font-size: 15px;
+}
+
+.cajainicio .caja2 p {
+    padding: 0 15px;
+    font-size: 15px;
 }
 
 .btn {
@@ -106,144 +166,56 @@ p {
     margin: 0 20px;
 }
 
-
-.content {
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.btn-home .imagen {
+    display: flexbox;
 }
 
-.sau {
-    padding: 30px;
-    margin-top: auto;
-    background: #202020;
-
-}
-
-.box-defi {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+.titulo {
+    text-align: left; 
+    font-family: Arial Black; 
+    font-weight: bold; 
+    font-size: 30px; 
+    color: #fff; 
+    text-shadow: -1px 0 #656565, 0 1px #5c5c5c, 1px 0 #545454, 0 -1px #616161;
     text-align: center;
+    }
 
-}
+.title {
+        color: aliceblue;
+        font-weight: lighter;
+        text-shadow: -1px 0 #656565, 0 1px #5c5c5c, 1px 0 #545454, 0 -1px #616161;
+        text-align: center;
 
-.box-defi .boxa {
-    height: 11rem;
-    width: 17rem;
-    background: #101010;
+    }
+
+.textito {
+    color: #030303;
+    background-color: whitesmoke;
     text-align: center;
-    border-radius: 1rem;
-    margin: 2rem;   
-
-}
-
-.box-defi .boxa i {
-    height: 3rem;
-    width: 3rem;
-    line-height: 3rem;
-    text-align: center;
-    border-radius: 50%;
-    color: #fff;
-    background: #b05e27;
-    font-size: 2rem;
-    margin: 1rem 0;
-
-}
-
-.box-defi .boxa h3 {
-    font-size: 30px;
-    color: #8da9fb;
-
-}
-
-.box-defi .boxa p {
-    padding: 0 15px;
-    font-size: 15px;
-}
-
-.box-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    text-align: center;
-
-}
-
-.box-container .box {
-    height: 11rem;
-    width: 17rem;
-    background: #101010;
-    text-align: center;
-    border-radius: 1rem;
-    margin: 2rem;   
-}
-
-.box-container .box i {
-    height: 3rem;
-    width: 3rem;
-    line-height: 3rem;
-    text-align: center;
-    border-radius: 50%;
-    color: #fff;
-    background: #b05e27;
-    font-size: 2rem;
-    margin: 1rem 0;
-
-}
-
-.box-container .box h3 {
-    font-size: 30px;
-    color: #8da9fb;
-
-}
-
-.box-container .box p {
-    padding: 0 15px;
-    font-size: 15px;
+    font-size: larger;
 }
 
 .about {
     background: #171717;
 }
 
-.price {
-    background: url(img/costos.jpg) no-repeat center;
-    background-attachment: fixed;
-    background-size: cover;
-    text-align: center;
+
+.title {
+    margin-bottom:45px;
+    margin-top: auto;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgb(76, 76, 76);
 }
 
+.contenedor {
+    display: flex;
+    flex-direction: column;
 
-.contact {
-    padding-top: 0px;
-    background: #171717;
-    padding-bottom: 0;
 }
 
-
-@media (max-width: 768px) {
-
-    .title {
-        margin-bottom: 0;
-        font-size: 40px;
-        color: #3f3f3f;
-    }
-
-    .sau {
-        height: 100vh;
-        margin-top: autoS;
-    }
-
-    .navbar {
-        display: none;
-    }
-    @media only screen and (max-width: 600px) {
-        body {
-          font-size: 14px;
-        }
-      }
-    
+.barra {
+    display: flex;
+    flex-direction: column;
 }
